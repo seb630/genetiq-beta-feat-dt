@@ -96,4 +96,10 @@
 	&:hover {
 		background-color: #f5f5f5;
 	}
+
+	&.activeOption {
+		background-color: #f0f0f0;
+		font-weight: 500;
+	}
 }
+

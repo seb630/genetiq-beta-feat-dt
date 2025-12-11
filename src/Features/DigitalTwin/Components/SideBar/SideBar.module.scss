@@ -8,6 +8,13 @@
 
 	z-index: 2;
 
+	.dropdowns-container {
+		display: flex;
+		gap: 8px;
+		flex-direction: row;
+		margin-bottom: 16px;
+	}
+
 	button {
 		display: flex;
 		justify-content: center;

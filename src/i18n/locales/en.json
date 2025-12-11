@@ -1,0 +1,12 @@
+{
+	"dashboard": {
+		"totalHealth": "Total Health",
+		"cardiovascular": "Cardiovascular"
+	},
+	"language": {
+		"english": "English",
+		"german": "German",
+		"chinese": "Chinese"
+	}
+}
+

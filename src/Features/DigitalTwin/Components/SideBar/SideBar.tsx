@@ -16,6 +16,7 @@ import UlnaRadiusAltIcon from "@assets/SideBar/Icons/ulna_radius_alt.svg?react";
 import UrologyIcon from "@assets/SideBar/Icons/urology.svg?react";
 import IconButton from "./Components/IconButton/IconButton";
 import Dropdown from "../../Dropdown/Dropdown";
+import LanguageDropdown from "../../Dropdown/LanguageDropdown";
 import { useDispatch } from "react-redux";
 import { setCategory } from "@/App/Redux/categorySlice";
 import React, { useEffect } from "react";
@@ -121,11 +122,14 @@ const SideBar = ({ onModelChange, modelType = "body" }: SideBarProps) => {
 
 	return (
 		<div className={styles["SideBar-container"]}>
-			<Dropdown
-				value={dropdownValue}
-				onChange={handleDropdownChange}
-				onModelChange={onModelChange}
-			/>
+			<div className={styles["dropdowns-container"]}>
+				<Dropdown
+					value={dropdownValue}
+					onChange={handleDropdownChange}
+					onModelChange={onModelChange}
+				/>
+				<LanguageDropdown />
+			</div>
 			{buttons.map((data, index) => (
 				<IconButton
 					key={data.text}
