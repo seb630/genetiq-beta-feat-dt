@@ -2,13 +2,19 @@
 	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 	line-height: 1.5;
 	font-weight: 400;
-	// color-scheme: light dark;
+	color-scheme: light dark;
 	color: rgba(0, 0, 0, 0.87);
 	background-color: #ffffff;
 	font-synthesis: none;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark {
+	color: rgba(255, 255, 255, 0.87);
+	background-color: #1a1a1a;
 }
 
 a {
@@ -22,6 +28,12 @@ a:hover {
 
 input {
 	background-color: #ffffff;
+	transition: background-color 0.3s ease;
+}
+
+.dark input {
+	background-color: #2a2a2a;
+	color: rgba(255, 255, 255, 0.87);
 }
 
 body {
@@ -50,11 +62,21 @@ button {
 	font-weight: 500;
 	font-family: "Inter";
 	background-color: #1a1a1a;
+	color: #ffffff;
 	cursor: pointer;
-	transition: border-color 0.25s;
+	transition: border-color 0.25s, background-color 0.3s ease;
 }
 button:hover {
 	border-color: #646cff;
+}
+
+.dark button {
+	background-color: #2a2a2a;
+	color: rgba(255, 255, 255, 0.87);
+}
+.dark button:hover {
+	border-color: #747bff;
+	background-color: #3a3a3a;
 }
 
 // @media (prefers-color-scheme: light) {
